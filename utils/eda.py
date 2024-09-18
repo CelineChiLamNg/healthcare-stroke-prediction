@@ -32,7 +32,7 @@ def violin_boxplot(data: pd.DataFrame, columns: List[str], title: Optional[
 
 
 def countplot(data: pd.DataFrame, columns:List[str], title: Optional[str] =
-None, nrows: int, ncols: int) -> None:
+None, nrows: int = 1, ncols: int = 1) -> None:
 
 
     fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(ncols*5,
@@ -68,7 +68,7 @@ None, nrows: int, ncols: int) -> None:
     plt.show()
 
 def percentageplot(data: pd.DataFrame, columns:List[str], title: Optional[
-    str] = None, nrows: int, ncols: int) -> None:
+    str] = None, nrows: int = 1, ncols: int = 1) -> None:
 
 
     fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(ncols*5,
@@ -86,7 +86,7 @@ def percentageplot(data: pd.DataFrame, columns:List[str], title: Optional[
         sns.countplot(data=data, x=col, ax=axes_flatten[i])
         axes_flatten[i].set_title(col)
         for p in axes_flatten[i].patches:
-            percentage = (int(p.get_height())*100/df_len).round(2)
+            percentage = (int(p.get_height())*100/df_len)
             (axes_flatten[i]
              .annotate(f'{percentage}%',
                        (p.get_x() + p.get_width() / 2., p
