@@ -34,14 +34,18 @@ def violin_boxplot(data: pd.DataFrame, columns: List[str], title: Optional[
 def countplot(data: pd.DataFrame, columns:List[str], title: Optional[str] =
 None, nrows: int = 1, ncols: int = 1) -> None:
 
-
-    fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(ncols*5,
-                                                                nrows*4))
+    fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(ncols * 5,
+                                                                nrows * 4))
     fig.subplots_adjust(hspace=1, wspace=0.4)
-    axes_flatten = axes.flatten()
-    col_len = len(columns)
-    axes_len = len(axes_flatten)
 
+    if np.ndim(axes) == 0:
+        axes_flatten = [axes]
+    else:
+        axes_flatten = axes.flatten()
+
+    col_len = len(columns)
+    df_len = data.shape[0]
+    axes_len = len(axes_flatten)
 
     for i, col in enumerate(columns):
         sns.countplot(data=data, x=col, ax=axes_flatten[i])
@@ -78,10 +82,16 @@ def percentageplot(data: pd.DataFrame, columns:List[str], title: Optional[
     fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(ncols*5,
                                                                 nrows*4))
     fig.subplots_adjust(hspace=1, wspace=0.4)
-    axes_flatten = axes.flatten()
+
+    if np.ndim(axes) == 0:
+        axes_flatten = [axes]
+    else:
+        axes_flatten = axes.flatten()
+
     col_len = len(columns)
     df_len = data.shape[0]
     axes_len = len(axes_flatten)
+
 
     for i, col in enumerate(columns):
         sns.countplot(data=data, x=col, ax=axes_flatten[i])
