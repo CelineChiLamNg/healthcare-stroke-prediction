@@ -78,15 +78,11 @@ def percentageplot(data: pd.DataFrame, columns:List[str], title: Optional[
     col_len = len(columns)
     df_len = data.shape[0]
 
-    if col_len%2 == 1:
-        axes_flatten[-1].clear()
-        axes_flatten[-1].axis('off')
-
     for i, col in enumerate(columns):
         sns.countplot(data=data, x=col, ax=axes_flatten[i])
         axes_flatten[i].set_title(col)
         for p in axes_flatten[i].patches:
-            percentage = (int(p.get_height())*100/df_len)
+            percentage = round((p.get_height() * 100 / df_len), 2)
             (axes_flatten[i]
              .annotate(f'{percentage}%',
                        (p.get_x() + p.get_width() / 2., p
@@ -99,6 +95,10 @@ def percentageplot(data: pd.DataFrame, columns:List[str], title: Optional[
         axes_flatten[i].tick_params(axis='y', which='both', length=0,
                                     labelleft=False)
         axes_flatten[i].set(ylabel=None)
+
+    if col_len%2 == 1:
+        axes_flatten[-1].clear()
+        axes_flatten[-1].axis('off')
 
     if title:
         plt.suptitle(title, fontsize=15)
