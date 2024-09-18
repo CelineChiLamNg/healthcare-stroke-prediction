@@ -10,7 +10,7 @@ from typing import Optional, List
 def missing_values(df: pd.DataFrame) -> pd.DataFrame:
     length = df.shape[0]
     missing_values_count = df.isnull().sum()
-    missing_values_percentage = ((df.isnull().sum() / len(df)) * 100).round(2)
+    missing_values_percentage = round((df.isnull().sum() / len(df)) * 100, 2)
     summary_df = pd.DataFrame({
         'Column': df.columns,
         'Missing Values': missing_values_count,
@@ -41,9 +41,6 @@ None, nrows: int = 1, ncols: int = 1) -> None:
     axes_flatten = axes.flatten()
     col_len = len(columns)
 
-    if col_len%2 == 1:
-        axes_flatten[-1].clear()
-        axes_flatten[-1].axis('off')
 
     for i, col in enumerate(columns):
         sns.countplot(data=data, x=col, ax=axes_flatten[i])
@@ -60,7 +57,12 @@ None, nrows: int = 1, ncols: int = 1) -> None:
                                     labelbottom=True)
         axes_flatten[i].tick_params(axis='y', which='both', length=0,
                                     labelleft=False)
-        axes_flatten[i].set(ylabel=None)
+        axes_flatten[i].set(ylabel=None, xlabel=None)
+
+
+    if (col_len%2) != 0:
+        axes_flatten[-1].clear()
+        axes_flatten[-1].axis('off')
 
     if title:
         plt.suptitle(title, fontsize=15)
@@ -94,9 +96,9 @@ def percentageplot(data: pd.DataFrame, columns:List[str], title: Optional[
                                     labelbottom=True)
         axes_flatten[i].tick_params(axis='y', which='both', length=0,
                                     labelleft=False)
-        axes_flatten[i].set(ylabel=None)
+        axes_flatten[i].set(ylabel=None, xlabel=None)
 
-    if col_len%2 == 1:
+    if (col_len%2) != 0:
         axes_flatten[-1].clear()
         axes_flatten[-1].axis('off')
 
