@@ -37,14 +37,15 @@ None, nrows: int = 1, ncols: int = 1) -> None:
 
     fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(ncols*5,
                                                                 nrows*4))
-    fig.subplots_adjust(hspace=0.5, wspace=0.4)
+    fig.subplots_adjust(hspace=1, wspace=0.4)
     axes_flatten = axes.flatten()
     col_len = len(columns)
+    axes_len = len(axes_flatten)
 
 
     for i, col in enumerate(columns):
         sns.countplot(data=data, x=col, ax=axes_flatten[i])
-        axes_flatten[i].set_title(col)
+        axes_flatten[i].set_title(col, pad=15)
         for p in axes_flatten[i].patches:
             (axes_flatten[i]
              .annotate(f'{int(p.get_height())}',
@@ -60,9 +61,10 @@ None, nrows: int = 1, ncols: int = 1) -> None:
         axes_flatten[i].set(ylabel=None, xlabel=None)
 
 
-    if (col_len%2) != 0:
-        axes_flatten[-1].clear()
-        axes_flatten[-1].axis('off')
+    if col_len < axes_len:
+        for j in range(col_len, len(axes_flatten)):
+            axes_flatten[j].clear()
+            axes_flatten[j].axis('off')
 
     if title:
         plt.suptitle(title, fontsize=15)
@@ -75,14 +77,15 @@ def percentageplot(data: pd.DataFrame, columns:List[str], title: Optional[
 
     fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(ncols*5,
                                                                 nrows*4))
-    fig.subplots_adjust(hspace=0.5, wspace=0.4)
+    fig.subplots_adjust(hspace=1, wspace=0.4)
     axes_flatten = axes.flatten()
     col_len = len(columns)
     df_len = data.shape[0]
+    axes_len = len(axes_flatten)
 
     for i, col in enumerate(columns):
         sns.countplot(data=data, x=col, ax=axes_flatten[i])
-        axes_flatten[i].set_title(col)
+        axes_flatten[i].set_title(col, pad=15)
         for p in axes_flatten[i].patches:
             percentage = round((p.get_height() * 100 / df_len), 2)
             (axes_flatten[i]
@@ -98,9 +101,10 @@ def percentageplot(data: pd.DataFrame, columns:List[str], title: Optional[
                                     labelleft=False)
         axes_flatten[i].set(ylabel=None, xlabel=None)
 
-    if (col_len%2) != 0:
-        axes_flatten[-1].clear()
-        axes_flatten[-1].axis('off')
+    if col_len < axes_len:
+        for j in range(col_len, len(axes_flatten)):
+            axes_flatten[j].clear()
+            axes_flatten[j].axis('off')
 
     if title:
         plt.suptitle(title, fontsize=15)
