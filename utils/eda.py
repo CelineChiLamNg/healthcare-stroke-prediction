@@ -38,13 +38,25 @@ Optional[str] = None, nrows: int = 1, ncols: int = 1) -> None:
     else:
         axes_flatten = axes.flatten()
 
-    sns.violinplot(data=data[columns], orient='h',
-                   density_norm='count', inner=None)
-    sns.boxplot(data=data[columns], width=0.2,
-                showfliers=True,
-                boxprops={'facecolor': 'None'}, orient='h')
+    col_len = len(columns)
+    df_len = data.shape[0]
+    axes_len = len(axes_flatten)
+
+    for i, column in enumerate(columns):
+        sns.violinplot(data=data[columns], orient='h',
+                       density_norm='count', inner=None, ax=axes_flatten[i])
+        sns.boxplot(data=data[columns], width=0.2,
+                    showfliers=True,
+                    boxprops={'facecolor': 'None'}, orient='h', ax=axes_flatten[i])
+
+    if col_len < axes_len:
+        for j in range(col_len, len(axes_flatten)):
+            axes_flatten[j].clear()
+            axes_flatten[j].axis('off')
+
     if title:
-        plt.title(title)
+        plt.suptitle(title, fontsize=15)
+    plt.tight_layout()
     plt.show()
 
 
