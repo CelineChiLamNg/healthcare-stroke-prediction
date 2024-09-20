@@ -19,8 +19,7 @@ def missing_values(df: pd.DataFrame) -> pd.DataFrame:
     return summary_df
 
 def violin_boxplot(data: pd.DataFrame, columns: List[str], title: Optional[
-    str] = None, figsize: Optional[tuple] = (10, 6), ax=None) -> None:
-    plt.figure(figsize=figsize)
+    str] = None, ax=None) -> None:
     sns.violinplot(data=data[columns], orient='h',
                    density_norm='count', inner=None, ax=ax)
     sns.boxplot(data=data[columns], width=0.2,
