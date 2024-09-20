@@ -27,6 +27,7 @@ def violin_boxplot(data: pd.DataFrame, columns: List[str], title: Optional[
                 boxprops={'facecolor': 'None'}, orient='h', ax=ax)
     if title:
         ax.set_title(title)
+    return plt.show()
 
 def violin_box_subplots(data: pd.DataFrame, columns: List[str], title:
 Optional[str] = None, nrows: int = 1, ncols: int = 1) -> None:
