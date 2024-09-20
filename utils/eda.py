@@ -27,8 +27,29 @@ def violin_boxplot(data: pd.DataFrame, columns: List[str], title: Optional[
                 boxprops={'facecolor': 'None'}, orient='h', ax=ax)
     plt.show()
 
+def violin_box_subplots(data: pd.DataFrame, columns: List[str], title:
+Optional[str] = None, nrows: int = 1, ncols: int = 1) -> None:
+    fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(ncols * 5,
+                                                                nrows * 4))
+    fig.subplots_adjust(hspace=1, wspace=0.4)
 
-def countplot(data: pd.DataFrame, columns:List[str], title: Optional[str] =
+    if np.ndim(axes) == 0:
+        axes_flatten = [axes]
+    else:
+        axes_flatten = axes.flatten()
+
+    sns.violinplot(data=data[columns], orient='h',
+                   density_norm='count', inner=None)
+    sns.boxplot(data=data[columns], width=0.2,
+                showfliers=True,
+                boxprops={'facecolor': 'None'}, orient='h')
+    if title:
+        plt.title(title)
+    plt.show()
+
+
+def count_subplots(data: pd.DataFrame, columns:List[str], title: Optional[
+    str] =
 None, nrows: int = 1, ncols: int = 1) -> None:
 
     fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(ncols * 5,
@@ -72,7 +93,7 @@ None, nrows: int = 1, ncols: int = 1) -> None:
     plt.tight_layout()
     plt.show()
 
-def percentageplot(data: pd.DataFrame, columns:List[str], title: Optional[
+def percentage_subplots(data: pd.DataFrame, columns:List[str], title: Optional[
     str] = None, nrows: int = 1, ncols: int = 1) -> None:
 
 
