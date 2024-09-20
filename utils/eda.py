@@ -20,6 +20,10 @@ def missing_values(df: pd.DataFrame) -> pd.DataFrame:
 
 def violin_boxplot(data: pd.DataFrame, columns: List[str], title: Optional[
     str] = None, ax=None) -> None:
+
+    if ax is None:
+        ax = plt.gca()
+
     sns.violinplot(data=data[columns], orient='h',
                    density_norm='count', inner=None, ax=ax)
     sns.boxplot(data=data[columns], width=0.2,
@@ -27,7 +31,7 @@ def violin_boxplot(data: pd.DataFrame, columns: List[str], title: Optional[
                 boxprops={'facecolor': 'None'}, orient='h', ax=ax)
     if title:
         ax.set_title(title)
-    return plt.show()
+
 
 def violin_box_subplots(data: pd.DataFrame, columns: List[str], title:
 Optional[str] = None, nrows: int = 1, ncols: int = 1) -> None:
