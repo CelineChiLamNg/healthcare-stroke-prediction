@@ -202,7 +202,7 @@ def stacked_bar_plot(df: pd.DataFrame, col: str, hue: str,
 
 
 def stacked_horizontal_feature_distribution(data: pd.DataFrame, columns:
-List[str]) -> None:
+List[str], title: Optional[str] = None) -> None:
 
     missing_columns = [col for col in columns if col not in data.columns]
     if missing_columns:
@@ -214,15 +214,17 @@ List[str]) -> None:
 
     colors = ['#ff9999', '#66b3ff', '#99ff99', '#ffcc99', '#c2c2f0', '#ffb3e6']
 
-    fig, ax = plt.subplots(figsize=(10, 6))
+    fig, ax = plt.subplots(figsize=(10, 5))
 
     for i, feature in enumerate(columns):
         left = 0
         for j, (category, value) in enumerate(percentages[feature].items()):
-
             ax.barh(i, value * 100, left=left, color=colors[j % len(colors)])
-
-            ax.text(left + value * 100 / 2, i, f'{category}\n{value * 100:.2f}%', ha='center', va='center', color='black', fontsize=10)
+            text_val = f'{category}\n{value * 100:.2f}%' if value*100 < 200 \
+                else ''
+            ax.text(left + value * 100 / 2, i,
+                    text_val,
+                    ha='center', va='center', color='black', fontsize=10)
 
             left += value * 100
 
@@ -230,7 +232,7 @@ List[str]) -> None:
     ax.set_yticklabels(columns)
 
     ax.set_xlabel('Percentage')
-    ax.set_title('Distribution of Features by Categories with Percentages')
+    ax.set_title(title)
 
     # Display the plot
     plt.tight_layout()
