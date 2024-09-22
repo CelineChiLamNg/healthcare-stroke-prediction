@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f393105-9b7c-4122-877a-23a0f5a74509" name="Changes" comment="again">
+    <list default="true" id="9f393105-9b7c-4122-877a-23a0f5a74509" name="Changes" comment="markdowns">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stroke_prediction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/stroke_prediction.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/eda.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/eda.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +91,7 @@
       <workItem from="1726874594675" duration="134000" />
       <workItem from="1726920555795" duration="7825000" />
       <workItem from="1726960179085" duration="6237000" />
-      <workItem from="1727023039914" duration="606000" />
+      <workItem from="1727023039914" duration="5081000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -334,7 +333,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726960167308</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="markdowns">
+      <option name="closed" value="true" />
+      <created>1727025603694</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1727025603694</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,6 +368,7 @@
     <MESSAGE value="plots stroke vs no stroke" />
     <MESSAGE value="now" />
     <MESSAGE value="again" />
-    <option name="LAST_COMMIT_MESSAGE" value="again" />
+    <MESSAGE value="markdowns" />
+    <option name="LAST_COMMIT_MESSAGE" value="markdowns" />
   </component>
 </project>
