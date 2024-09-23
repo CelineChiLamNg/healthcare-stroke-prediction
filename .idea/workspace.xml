@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f393105-9b7c-4122-877a-23a0f5a74509" name="Changes" comment="markdowns">
+    <list default="true" id="9f393105-9b7c-4122-877a-23a0f5a74509" name="Changes" comment="correlation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stroke_prediction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/stroke_prediction.ipynb" afterDir="false" />
     </list>
@@ -91,7 +91,8 @@
       <workItem from="1726874594675" duration="134000" />
       <workItem from="1726920555795" duration="7825000" />
       <workItem from="1726960179085" duration="6237000" />
-      <workItem from="1727023039914" duration="5081000" />
+      <workItem from="1727023039914" duration="5818000" />
+      <workItem from="1727081150238" duration="141000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -341,7 +342,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727025603694</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="correlation">
+      <option name="closed" value="true" />
+      <created>1727032388548</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1727032388548</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,6 +378,7 @@
     <MESSAGE value="now" />
     <MESSAGE value="again" />
     <MESSAGE value="markdowns" />
-    <option name="LAST_COMMIT_MESSAGE" value="markdowns" />
+    <MESSAGE value="correlation" />
+    <option name="LAST_COMMIT_MESSAGE" value="correlation" />
   </component>
 </project>
