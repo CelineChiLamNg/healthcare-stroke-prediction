@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f393105-9b7c-4122-877a-23a0f5a74509" name="Changes" comment="ready for preprocessing 1">
+    <list default="true" id="9f393105-9b7c-4122-877a-23a0f5a74509" name="Changes" comment="preprocessing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stroke_prediction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/stroke_prediction.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +25,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -97,6 +101,8 @@
       <workItem from="1727184241924" duration="20964000" />
       <workItem from="1727603484678" duration="657000" />
       <workItem from="1727605674173" duration="1232000" />
+      <workItem from="1727607049189" duration="9233000" />
+      <workItem from="1727706408043" duration="11732000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -386,7 +392,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727544274685</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="preprocessing">
+      <option name="closed" value="true" />
+      <created>1727634122064</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1727634122064</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,6 +432,7 @@
     <MESSAGE value="target and sample population" />
     <MESSAGE value="ready for preprocessing" />
     <MESSAGE value="ready for preprocessing 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="ready for preprocessing 1" />
+    <MESSAGE value="preprocessing" />
+    <option name="LAST_COMMIT_MESSAGE" value="preprocessing" />
   </component>
 </project>

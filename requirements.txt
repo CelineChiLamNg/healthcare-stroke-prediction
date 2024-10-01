@@ -1,8 +1,10 @@
-pandas
-matplotlib
-seaborn
+pandas~=2.2.2
+matplotlib~=3.9.2
+seaborn~=0.13.2
 scipy
 scikit-posthocs
-numpy
+numpy~=2.0.2
 statsmodels
 scikit-learn
+xgboost
+lightgbm
