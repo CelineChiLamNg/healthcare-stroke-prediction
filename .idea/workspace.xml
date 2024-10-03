@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f393105-9b7c-4122-877a-23a0f5a74509" name="Changes" comment="hypertuning">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9f393105-9b7c-4122-877a-23a0f5a74509" name="Changes" comment="details">
       <change beforePath="$PROJECT_DIR$/stroke_prediction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/stroke_prediction.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +100,7 @@
       <workItem from="1727603484678" duration="657000" />
       <workItem from="1727605674173" duration="1232000" />
       <workItem from="1727607049189" duration="9233000" />
-      <workItem from="1727706408043" duration="53201000" />
+      <workItem from="1727706408043" duration="54392000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -423,7 +422,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727897986598</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="details">
+      <option name="closed" value="true" />
+      <created>1727972677697</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1727972677697</updated>
+    </task>
+    <task id="LOCAL-00042" summary="details">
+      <option name="closed" value="true" />
+      <created>1727972701949</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1727972701949</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,6 +473,7 @@
     <MESSAGE value="preprocessing" />
     <MESSAGE value="models" />
     <MESSAGE value="hypertuning" />
-    <option name="LAST_COMMIT_MESSAGE" value="hypertuning" />
+    <MESSAGE value="details" />
+    <option name="LAST_COMMIT_MESSAGE" value="details" />
   </component>
 </project>
