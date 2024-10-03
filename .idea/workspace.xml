@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f393105-9b7c-4122-877a-23a0f5a74509" name="Changes" comment="models">
+    <list default="true" id="9f393105-9b7c-4122-877a-23a0f5a74509" name="Changes" comment="hypertuning">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stroke_prediction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/stroke_prediction.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +101,7 @@
       <workItem from="1727603484678" duration="657000" />
       <workItem from="1727605674173" duration="1232000" />
       <workItem from="1727607049189" duration="9233000" />
-      <workItem from="1727706408043" duration="40933000" />
+      <workItem from="1727706408043" duration="53201000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -416,7 +415,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727872955141</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="hypertuning">
+      <option name="closed" value="true" />
+      <created>1727897986598</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1727897986598</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,6 +457,7 @@
     <MESSAGE value="ready for preprocessing 1" />
     <MESSAGE value="preprocessing" />
     <MESSAGE value="models" />
-    <option name="LAST_COMMIT_MESSAGE" value="models" />
+    <MESSAGE value="hypertuning" />
+    <option name="LAST_COMMIT_MESSAGE" value="hypertuning" />
   </component>
 </project>
