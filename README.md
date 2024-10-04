@@ -68,5 +68,5 @@ eg.
     16.0,
     17.0,
     18.0
-]
+]<br>
 The model will return 0 or 1, for False or True.
