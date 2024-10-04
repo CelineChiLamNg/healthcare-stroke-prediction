@@ -47,7 +47,7 @@ uvicorn app:app --reload
 ```
 
 and then the app is available on 
-POST localhost:8000 with body:
+POST localhost:8000 with body: <br>
 eg.
 [
     1.0,
@@ -69,4 +69,4 @@ eg.
     17.0,
     18.0
 ]
-it will return 0 or 1
+The model will return 0 or 1, for False or True.
