@@ -1,15 +1,30 @@
 # Stroke Prediction Dataset
 
-**Objective:** <br>
+## Objective
 
-The dataset was downloaded from Kaggle, [Stroke_Prediction_Data]
-(https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset)
-,<br>
-on 10 September 2024. It will be used to predict whether a patient is likely
+The dataset was downloaded from Kaggle, [Stroke_Prediction_Data](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset)
+, on 10 September 2024. It will be used to predict whether a patient is likely
  <br> to get a stroke. <br>
 The data contains 11 clinical features, like gender, age, smoking status, <br>
 etc, that help describe each patient.<br><br>
-**Results:**<br>
+
+
+## Technology Used
+1. python
+2. pandas
+3. matplotlib
+4. seaborn
+5. sklearn
+5. pipeline
+6. random forest
+7. xgboost
+8. lightgbm
+9. logistic regression
+10. dummy classifier
+11. SHAP
+
+
+## Results
 <i>Age, BMI and avg_glucose_level are most influential</i><br>
  1. Age <br>
    - It is visible how it has a much larger impact in general on younger 
@@ -39,7 +54,8 @@ etc, that help describe each patient.<br><br>
     - 0 in hypertension is not influenced by this feature, whereas 1 in 
     hypertension is pushed towards both stroke and no stroke.<br>
 
-**Instructions:**<br>
+
+## Instructions
 
 In order to run the app on port 8000 please run in the terminal
 ```
