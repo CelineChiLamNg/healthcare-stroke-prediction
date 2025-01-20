@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f393105-9b7c-4122-877a-23a0f5a74509" name="Changes" comment="commit">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="9f393105-9b7c-4122-877a-23a0f5a74509" name="Changes" comment="README.md">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,15 +193,8 @@
       <workItem from="1734039917142" duration="21000" />
       <workItem from="1734040003012" duration="16000" />
       <workItem from="1734540015500" duration="4000" />
-      <workItem from="1737128714677" duration="489000" />
-    </task>
-    <task id="LOCAL-00001" summary="first commit">
-      <option name="closed" value="true" />
-      <created>1725993822611</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1725993822611</updated>
+      <workItem from="1737128714677" duration="815000" />
+      <workItem from="1737395495372" duration="17000" />
     </task>
     <task id="LOCAL-00002" summary="eda first">
       <option name="closed" value="true" />
@@ -587,7 +580,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730992209360</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="README.md">
+      <option name="closed" value="true" />
+      <created>1737129477291</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1737129477292</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -625,7 +626,8 @@
     <MESSAGE value="details" />
     <MESSAGE value="interpretability" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="README.md" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/chilng_DS_v2_5_3_2_5$lskdjf.coverage" NAME="lskdjf Coverage Results" MODIFIED="1728063791171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
