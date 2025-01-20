@@ -195,14 +195,8 @@
       <workItem from="1734540015500" duration="4000" />
       <workItem from="1737128714677" duration="815000" />
       <workItem from="1737395495372" duration="17000" />
-    </task>
-    <task id="LOCAL-00002" summary="eda first">
-      <option name="closed" value="true" />
-      <created>1726324594707</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1726324594707</updated>
+      <workItem from="1737395515695" duration="240000" />
+      <workItem from="1737395782786" duration="103000" />
     </task>
     <task id="LOCAL-00003" summary="plot">
       <option name="closed" value="true" />
@@ -588,7 +582,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737129477292</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="README.md">
+      <option name="closed" value="true" />
+      <created>1737395691294</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1737395691295</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
