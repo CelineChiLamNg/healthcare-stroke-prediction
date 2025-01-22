@@ -23,9 +23,27 @@ etc, that help describe each patient.<br><br>
 10. dummy classifier
 11. SHAP
 
+## Approach & Methodology
+I approached this problem by following a structured methodology of data 
+exploration, preprocessing, modeling, and evaluation.
+1. Data Exploration: Examined feature distribution, in general and by 
+   target variable. Understood that missing values are random and do not 
+   belong to a certain subpopulation. 
+2. Preprocessing: Split data into train, validation, and test sets. Encode 
+   and scale features.
+3. Modeling: Used a Dummy Classifier as baseline model. Then compared 
+   performance between Logistic Regression, Random Forest, LightGBM, and 
+   XGBoost. Then apply hyperparameter tuning on the best performing model. 
+   Retrain and test on whole data.
+4. Evaluation: Examined AUC ROC, precision, recall, F1 score. Used decision 
+   tree plotting, feature importance, and SHAP to interpret final model.
 
 ## Results
-<i>Age, BMI and avg_glucose_level are most influential</i><br>
+AUC, recall, and F1 scores have reduced considerably when comparing model 
+tested on validation and test set. Showing the model was most likely 
+overfitting on the validation set.
+Regarding model interpretation, Age, BMI and avg_glucose_level are most 
+influential.
  1. Age <br>
    - It is visible how it has a much larger impact in general on younger 
    cases. This importance slowly reduced with age growing and increases 
@@ -55,6 +73,9 @@ etc, that help describe each patient.<br><br>
     hypertension is pushed towards both stroke and no stroke.<br>
 
 
+## Challenges & Learnings
+Imbalanced dataset was one of the largest challenge encountered. For the 
+next iteration, adjusting weights would possibly reduce the affect of this.
 
 ## Instructions
 
